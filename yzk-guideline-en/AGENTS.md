@@ -60,6 +60,17 @@ For multi-step tasks, state a brief plan:
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
 
+## 5. Subdirectory Documentation
+
+**When creating a subdirectory, create that directory's own `AGENTS.md` first.**
+
+If you create a subdirectory such as `Util`, `Constant`, or `Database`, first create an `AGENTS.md` document inside that directory.
+
+When initializing that directory's `AGENTS.md`, the document must include:
+- If you modify code files in this directory, update this Markdown document at the same time.
+- A concise code overview for this directory, such as what functionality the code in this directory implements.
+- The structure tree for this directory.
+
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
