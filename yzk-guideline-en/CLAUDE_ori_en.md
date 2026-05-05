@@ -66,6 +66,8 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 
 If you create a subdirectory such as `Util`, `Constant`, or `Database`, first create a `CLAUDE.md` document inside that directory.
 
+If you are working in an existing project and discover that a subdirectory does not yet have a `CLAUDE.md`, add one before continuing to modify code in that directory.
+
 When initializing that directory's `CLAUDE.md`, the document must include:
 - If you modify code files in this directory, update this Markdown document at the same time.
 - A concise code overview for this directory, such as what functionality the code in this directory implements.

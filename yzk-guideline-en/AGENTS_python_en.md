@@ -73,6 +73,15 @@ When initializing that directory's `AGENTS.md`, the document must include:
 - A concise code overview for this directory, such as what functionality the code in this directory implements.
 - The structure tree for this directory.
 
+## 6. Python Environment And Dependencies
+
+**Always use the current directory's `.venv` and keep dependency declarations in sync.**
+
+- When working on a Python project, always use the `.venv` virtual environment in the current directory.
+- If the current directory does not yet contain a `.venv`, create and activate it before installing dependencies, running scripts, or executing tests.
+- After installing any dependency, always update `requirements.txt`.
+- If you change dependency versions or remove dependencies, update `requirements.txt` as well so it stays aligned with the actual environment.
+
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
