@@ -60,7 +60,20 @@ For multi-step tasks, state a brief plan:
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
 
-## 5. Subdirectory Documentation
+## 5. Project Documentation
+
+**When working on a concrete project, first ensure a project-level `AGENTS.md` exists.**
+
+If the project does not yet have an `AGENTS.md` document, create a project-level documentation file first.
+
+When initializing that document, it must include:
+- If you modify code files in this project, update this Markdown document at the same time.
+- A concise code overview for the project, such as what core functionality the project implements.
+- The project's directory structure tree.
+
+If the project already has an `AGENTS.md` document, supplement the existing document with the code overview and directory structure tree.
+
+## 6. Subdirectory Documentation
 
 **When creating a subdirectory, create that directory's own `AGENTS.md` first.**
 

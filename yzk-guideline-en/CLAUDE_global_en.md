@@ -1,4 +1,4 @@
-# AGENTS.md
+# CLAUDE.md
 
 Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-specific instructions as needed.
 
@@ -60,27 +60,31 @@ For multi-step tasks, state a brief plan:
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
 
-## 5. Subdirectory Documentation
+## 5. Project Documentation
 
-**When creating a subdirectory, create that directory's own `AGENTS.md` first.**
+**When working on a concrete project, first ensure a project-level `CLAUDE.md` exists.**
 
-If you create a subdirectory such as `Util`, `Constant`, or `Database`, first create an `AGENTS.md` document inside that directory.
+If the project does not yet have a `CLAUDE.md` document, create a project-level documentation file first.
 
-If you are working in an existing project and discover that a subdirectory does not yet have an `AGENTS.md`, add one before continuing to modify code in that directory.
+When initializing that document, it must include:
+- If you modify code files in this project, update this Markdown document at the same time.
+- A concise code overview for the project, such as what core functionality the project implements.
+- The project's directory structure tree.
 
-When initializing that directory's `AGENTS.md`, the document must include:
+If the project already has a `CLAUDE.md` document, supplement the existing document with the code overview and directory structure tree.
+
+## 6. Subdirectory Documentation
+
+**When creating a subdirectory, create that directory's own `CLAUDE.md` first.**
+
+If you create a subdirectory such as `Util`, `Constant`, or `Database`, first create a `CLAUDE.md` document inside that directory.
+
+If you are working in an existing project and discover that a subdirectory does not yet have a `CLAUDE.md`, add one before continuing to modify code in that directory.
+
+When initializing that directory's `CLAUDE.md`, the document must include:
 - If you modify code files in this directory, update this Markdown document at the same time.
 - A concise code overview for this directory, such as what functionality the code in this directory implements.
 - The structure tree for this directory.
-
-## 6. Python Environment And Dependencies
-
-**Always use the current directory's `.venv` and keep dependency declarations in sync.**
-
-- When working on a Python project, always use the `.venv` virtual environment in the current directory.
-- If the current directory does not yet contain a `.venv`, create and activate it before installing dependencies, running scripts, or executing tests.
-- After installing any dependency, always update `requirements.txt`.
-- If you change dependency versions or remove dependencies, update `requirements.txt` as well so it stays aligned with the actual environment.
 
 ---
 
